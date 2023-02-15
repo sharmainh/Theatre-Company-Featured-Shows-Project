@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e3b4645c83.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Griot Theatre Company</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container-1"> 
+            <!-- Creating two nav containers made it easier to position nav items and navbar brand.  -->
+            <div class="navbar-brand"> Griot Theater</div>
+       
+            <div class="nav-container-2"> 
+                
+                    <div class="flexbox-nav-item">
+                        <a href="#home" class="nav-link">Home</a> 
+                    </div>
+                    <div class="flexbox-nav-item">
+                        <!-- If you have a div in your code that has the id artist, when this a tag is clicked it will send the user to the artists section --> <a href="#features" class="nav-link">Feautures</a>
+                    </div>
+                    <div class="flexbox-nav-item item">
+                        <a href="#ouractors" class="nav-link">Our Actors</a>
+                    </div>
+                    <div class="flexbox-nav-item">
+                        <a href="#mission" class="nav-link">Mission</a>
+                    </div>
+                    <div class="flexbox-nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
+                </div>
+        </div>
+        
+    </nav>
+
+    <!-- Main Landing Tile -->
+    <section>
+        <div>
+            <div class="flexbox-showfeats" id="wrapper"><h1 class="showfeats">Featured Shows</h1></div> 
+            <img src="static/background-image/theater-image-background.png" alt="Posing actresses shadows in a black room with teal and reddish spotlights" class="background">
+        </div>
+       
+            <!-- <h1 class="showfeats">Featured Shows</h1>  -->
+    </section>
+
+    <!-- Gradient
+    <section class="gradient">   
+        <div id="gradient"></div>
+    </section> -->
+
+    <!-- Show Information -->
+    <section>
+    <div id="date">
+        April 2020
+    </div>
+    <div class="grid-show-container">
+        <div class="wrapper">
+            <div class="box">
+                <div class="grid-column-1">
+                    <img src="static/grid-images/A Raisin in the Sun.png" alt="Two Actors performing on a stage a middle aged man and a young boy" class="grid-image line">
+                </div>
+                <div class="grid-column-2">
+                    <p class="grid-text"><span class="show-title">A Raisin In The Sun</span>
+                        <span class=" grid-text show-text-date"><br>April 6, 2020 - March 20, 2020 
+                        <span class="grid-text show-text-info"><br>Griot Theatre 233 State St Chicago,IL
+                        <br>$75</span></p>
+                </div>
+                <div class="grid-column-3">
+                    <button class="grid-button">Read More</button>
+                </div>
+                <div class="grid-column-1">
+                    <img src="static/grid-images/A Raisin in the Sun.png" alt="Two Actors performing on a stage a middle aged man and a young boy" class="grid-image">
+                </div>
+                <div class="grid-column-2">
+                    <p class="grid-text"><span class="show-title">A Raisin In The Sun</span>
+                        <span class=" grid-text show-text-date"><br>April 6, 2020 - March 20, 2020 
+                        <span class="grid-text show-text-info"><br>Griot Theatre, 233 State St Chicago,IL
+                        <br>$75</span></p>
+                </div>
+                <div class="grid-column-3">
+                    <button class="grid-button">Read More</button>
+                </div>
+                <div class="grid-column-1">
+                    <img src="static/grid-images/A Raisin in the Sun.png" alt="Two Actors performing on a stage a middle aged man and a young boy" class="grid-image">
+                </div>
+                <div class="grid-column-2">
+                    <p class="grid-text"><span class="show-title">A Raisin In The Sun</span>
+                        <span class=" grid-text show-text-date"><br>April 6, 2020 - March 20, 2020 
+                        <span class="grid-text show-text-info"><br>Griot Theatre 233 State St Chicago,IL
+                        <br>$75</span></p>
+                </div>
+                <div class="grid-column-3">
+                    <button class="grid-button">Read More</button>
+                </div>
+                <div class="grid-column-1">
+                    <img src="static/grid-images/A Raisin in the Sun.png" alt="Two Actors performing on a stage a middle aged man and a young boy" class="grid-image line">
+                </div>
+                <div class="grid-column-2">
+                    <p class="grid-text"><span class="show-title">A Raisin In The Sun</span>
+                        <span class=" grid-text show-text-date"><br>April 6, 2020 - March 20, 2020 
+                        <span class="grid-text show-text-info"><br>Griot Theatre 233 State St Chicago,IL
+                        <br>$75</span></p>
+                </div>
+                <div class="grid-column-3">
+                    <button class="grid-button">Read More</button>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="bottom">
+        <div class="map">
+            <!-- There are cool ways to add interactive maps, theres code that you can copy and then embedd from other maps or you can use an image of a map -->
+            <img src="static/map/chicago map screenshot.png" alt="Map" class="mapimg">
+        </div>
+        <!-- This div is for footer info. The footer section has a Header called Info -->
+        <div class="footinfo">
+            <div class="foothead">Info</div>
+            <div class="location">
+                <!-- font awesome map icon is the i element code -->
+                <p class="tiny"><i class="fas fa-map-marker-alt"></i> Chicago,IL 60611 United States</p>
+            </div>
+            <div class="email">
+                <p class="tiny"><i class="fa-sharp fa-regular fa-envelope"></i> example@example.com</p>
+            </div>
+            <div class="phone">
+                <p class="tiny"><i class="fas fa-mobile-alt"></i> Call Us: 708-555-4488</p>
+            </div>
+        </div>
+        <div class="footshows">
+            <div class="foothead">Shows</div>
+            <div class="venue">
+                <a href="#"><p class="tiny">The Piano Lesson</p></a>
+            </div>
+            <div class="venue">
+                <!-- The class tiny is being used repeatedly because the styling is going to be the same for these sections -->
+                <a href="#"><p class="tiny">A Raisin in the Sun</p></a>
+            </div>
+            <div class="venue">
+                <a href="#"><p class="tiny">FAME</p></a>
+            </div>
+            <div class="venue">
+                <a href="#"><p class="tiny">The Color Purple</p></a>
+            </div>
+        </div>
+            <div class="social">
+                <div class="foothead">Social</div>
+                <div class="media">
+                    <a href="#"><p class="tiny"><i class="fa-brands fa-facebook"></i>Facebook</p></a>
+                </div>
+                <div class="media">
+                    <a href="#"><p class="tiny"><i class="fa-brands fa-twitter-square"></i>Twitter</p></a>
+                </div>
+                <div class="media">
+                    <a href="#"><p class="tiny"><i class="fa-brands fa-youtube"></i>Youtube</p></a>
+                </div>
+                <div class="media">
+                    <a href="#"><p class="tiny"><i class="fa-brands fa-instagram"></i>Instagram</p></a>
+                </div>
+            </div>
+        </div>
+</footer>
+
+    
+</body>
+</html>

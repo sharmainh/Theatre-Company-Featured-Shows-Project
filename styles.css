@@ -1,0 +1,272 @@
+*{
+     /* border: 1px solid red;   */
+    font-family: Roboto, 'Space Mono', monospace;
+}
+
+body{
+    /* This makes the background white all across*/
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+nav{
+    display: flex;
+    /* border: 1px solid red;   */
+    flex-direction: row;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    /* height: 60px; */
+    width: 100%;
+}
+
+.nav-container-1{
+    display: flex;
+    /* Positions flex item to left corner of webpage */
+    padding-left: 20em;
+    padding-top: 0.7em; 
+}
+
+.nav-container-2 {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 2; 
+    padding-left: 80em;
+
+}
+
+.navbar-brand{
+    display: flex;
+    flex-direction: column;
+    color: white;   
+    font-size: 6em;
+    padding-top: 0.5em;
+}
+
+.flexbox-nav-item{
+    font-size: 3em;   
+    margin: 2em;
+    height: 100%;
+}
+
+a{
+    /* This will remove the underline from the links  */
+    text-decoration: none;
+    color: white;
+}
+
+/* Whenever a mouse is hovering over an a tag depending on the code used below, something will happen when that occurs. for example, when the mouse hovers over one of the a tags the color of the text will change. */
+a:hover{
+    color: rgb(239, 132, 100);
+}
+
+.background{
+    display: flex;
+    /* This creates the  paralax effect for the main landing code style */
+    /* Everything defaults to zero, z index will take something and put it behind other items at (-1) if you have a number greater than zero it will bring it to the front */
+    z-index: -1;
+    /* If the width is set on an image to a specific width it will automatically adjust the height, no need to add both. This  will allow  the image to be the exact width as the browser */
+    width: 100%;
+    height:80%;
+   
+    /* To prevent the baxkground from moving. change the position to fixed, to keep it in place. zindex sends the background  to the back. positon - fixed kept the background in the same position without moving. */
+    /* position: fixed; */
+    /* This will move the background concert image up some to see more of the photo */
+    margin-left: -0.5px;
+    
+ }
+ .showfeats{
+    
+    /* em has to do with the font size */
+    /* height: 19em; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: grid;
+    position: absolute;
+    /* em has to do with the font size */
+   width: 100%;
+   padding-top: 1.7em;
+   text-shadow: -1px 1px 2px rgb(247, 11, 11),
+                  1px 1px 0 rgb(143, 243, 237),
+                  1px 1px 0 rgb(234, 114, 114),
+                  -1px -1px 0 rgb(111, 227, 231);
+ }
+ 
+ .flexbox-showfeats{
+    display: flex;
+    font-size: 18em;
+    justify-content: center;
+    width: 100%;
+    /* margin: 0px; */
+ }
+/* 
+#gradient{
+    display: flex;
+    padding-top: 10em;
+    margin-top: 20em;
+    height: auto;
+    width: auto;
+    background: linear-gradient(to top, rgba(255,255,255,0) 0%, rgb(0,0,0) 50%);
+    /* This bumps the text down a tad bit, the box is now the height of the text. The header content is moved to the bottom of the box */ 
+
+.box{
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 20em 20em 5em;
+    column-gap: 2em; 
+    padding-right: 77em;
+    margin-left: 16%;
+    margin-top: 1.5em;
+}
+
+
+.grid-image{
+display: grid;
+object-fit: cover;
+/* min-width: 50em; */
+height: 45em;
+padding-bottom: 5em;
+margin-bottom: 9em;
+/* Code to create and widen/ increase the length of the black line */
+border-bottom: 0.3em solid grey;
+padding-inline-end: 175em;
+}
+
+.grid-button{
+    display: grid;
+    height: 20%;
+    min-width: 7em;
+    background-color: rgba(255, 204, 0, 0.943);
+    color: white;
+    font-size: 4.6em;
+    font-weight: 900;
+    margin-left: 14em;
+    padding-top: 0.7em;
+    margin-top: 2em;
+    border-radius: 0.1em;
+    margin-bottom: 1em;
+}
+
+#date{
+    display: flex;
+    justify-content: row;
+    background-color: whitesmoke;
+    border: 1px solid black;  
+    border-color: black;
+    width: 68%;
+    margin-top: 5em;
+    margin-left: 10em;
+    text-indent: 2em;
+    margin-bottom: 2em;
+    padding-bottom: 0.3em;
+    padding-top: 0.2em;
+    font-size: 5.5em;   
+}
+
+.grid-column-2{
+    width: 95em;
+    margin-top: -5em;
+    margin-left: 60em;   
+}
+
+.grid-column-3{
+    margin-left: 100em; 
+}
+
+.grid-text{
+   padding-left: 5em;
+   line-height: 3em;
+   margin-bottom: 25em;
+}
+
+.show-title{
+    font-size: 5.3em;   
+}
+
+.show-text-info{
+    font-size: 1em;
+    font-weight: 300;
+}
+.show-text-date{
+    font-size: 3.6em;
+    font-weight: 700;
+    word-spacing: -0.3em;
+}
+
+
+.bottom{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 80px;
+    /* Evenly spaces the content in each section  */
+    justify-content: space-evenly;
+    margin-top: -5em;
+}
+
+.map{
+    width: 250px;
+    /* Adds padding around the photo so nothing is touching it */
+    padding: 3%;
+    padding-left: 30em;
+}
+
+/* Used to shrink the image down */
+.mapimg{
+    width: 80em;
+}
+
+.footinfo{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    /*  if the user has a big font (e.g., on a big screen) or a small font (e.g., on a handheld device), the sizes will be in proportion using em. */
+    font: 0.6em;
+    margin-left: 70em;
+    margin-bottom: 30em;
+}
+
+.footshows{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+}
+
+.foothead{
+    font-size: 6em;
+    margin-top: 1.5em;
+}
+
+.tiny{
+    padding-top: 3.5em;
+    margin: 3px;
+    font-size: 2.5em;
+}
+
+.fa-brands{
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+.fas{
+    font-size: 1.3em;
+    margin-right: 20px;
+}
+
+.fa-sharp{
+    font-size: 1.3em;
+    margin-right: 20px;
+}
+
